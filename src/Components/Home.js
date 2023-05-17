@@ -1,39 +1,18 @@
-import React , {useState} from "react";
+import React  from "react";
 
 
 const Home = () => {
-    const [inputValue, setInputValue]= useState(0);
 
-const increment=()=>{
-setInputValue(inputValue + 1);
-};
-const decrement=()=>{
-    setInputValue( inputValue - 1);
-}
-
-    const btnStyle={
-        padding :"20px",
-        border: "none",
-        backgroundColor:"#f1f1f1",
-        margin:"10px"
-        
-    }
 
 
   return (
-    <div>
-      <input
-        style={{ padding: 20, border: "1px solid rgba(0,0,0,0.4)" }}
-        type="number"
-        placeholder="enter something"
-        value={inputValue}
-        readOnly
-
-      
-        
-      />
-      <button style={btnStyle} onClick={increment}>+</button>
-      <button style={btnStyle} onClick={decrement}>-</button>
+    <div className="container">
+        <h1>Daily Goals</h1>
+        <form > <input type="text" placeholder="Title" />
+        <textarea placeholder="Decription" ></textarea>
+        <button type="submit">ADD</button>
+        </form>
+   
     </div>
   );
 };

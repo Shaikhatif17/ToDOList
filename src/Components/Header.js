@@ -1,10 +1,10 @@
 import React from 'react';
-import "./Header.css";
+
 
 const Header = () => {
   return (
     <div>
-      <h1>this is header</h1>
+     <nav>get ready to set your daily goals</nav>
       
     </div>
   )
