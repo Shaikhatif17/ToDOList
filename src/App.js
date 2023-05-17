@@ -7,10 +7,9 @@ import Home from './Components/Home';
 function App() {
   return (
     <div className="App">
-      hello  guys
     <Header/>
-    <Home/>>
-     
+    <Home/>
+    
     </div>
   );
 }
